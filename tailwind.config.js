@@ -8,6 +8,14 @@ module.exports = {
   "./src/components/**/*.{js,ts,jsx,tsx}",
   
   ],
+  safelist: [
+    'bg-',
+    'to-gray-400',
+    /^from-/,
+    {
+      pattern: /^bg-/,
+    },
+  ],
   
   theme: {
   
