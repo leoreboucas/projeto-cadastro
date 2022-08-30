@@ -1,28 +1,19 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-
   content: [
-  
-  "./src/pages/**/*.{js,ts,jsx,tsx}",
-  
-  "./src/components/**/*.{js,ts,jsx,tsx}",
-  
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
-    'bg-',
-    'to-gray-400',
-    /^from-/,
-    {
-      pattern: /^bg-/,
-    },
+    'from-green-400',
+    'from-blue-400',
+    'from-gray-400',
+    'to-gray-700',
+    'to-blue-700',
+    'to-green-700',
+    
   ],
-  
   theme: {
-  
-  extend: {},
-  
+    extend: {},
   },
-  
   plugins: [],
-  
-  }
+}

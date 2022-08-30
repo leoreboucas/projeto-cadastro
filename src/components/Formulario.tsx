@@ -43,14 +43,13 @@ const Formulario= (props: FormularioProps ) => {
         <div className='flex justify-end mt-7'>
             <Botao 
                 onClick={() => props.clienteMudou?.( new Cliente(nome, +idade, id))}
-                className={`mr-2 bg-gradient-to-r from-blue-400 to-blue-700
-            `} >
+                cor="blue"
+                className={`mr-2`} >
                 {id ? 'Alterar' : 'Salvar'}
             </Botao>
             <Botao 
                 onClick={props.cancelado}
-                className={`mr-2 bg-gradient-to-r from-gray-400 to-gray-700
-            `} >
+                className={`mr-2`} >
                 Cancelar
             </Botao>
         </div>
